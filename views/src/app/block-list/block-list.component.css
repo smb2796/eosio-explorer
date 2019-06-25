@@ -1,0 +1,7 @@
+.load-button{
+   float: right;
+  }
+
+.clickable {
+    cursor: pointer;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "eosio-explorer",
+  "version": "1.0.0",
+  "description": "A block explorer for the EOSIO Blockchain Network",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "start-server": "node app.js"
+  },
+  "author": "Sean Brown",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "eosjs": "^20.0.0",
+    "eosjs-api": "^7.0.4",
+    "express": "^4.16.3",
+    "node-fetch": "^2.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

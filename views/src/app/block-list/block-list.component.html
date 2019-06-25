@@ -1,0 +1,72 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <button mat-raised-button type="button" class="load-button" (click)="loadBlocks()">Load Blocks</button>
+                      <h4 class="card-title ">Most Recent EOSIO Blocks</h4>
+                      <p class="card-category"> Click on a block to view more information</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th col="1">
+                                      Block Number
+                                  </th>
+                                  <th col="2">
+                                      Block ID
+                                  </th>
+                                  <th col="3">
+                                      Timestamp
+                                  </th>
+                                  <th col="4">
+                                      Number of Transactions
+                                  </th>
+                              </thead>
+                              <tbody>
+                              
+                                <!-- <tr class="clickable">
+                                    <mat-expansion-panel *ngFor="let block of blocks">
+                                        <mat-expansion-panel-header>
+                                                <td>
+                                                    {{block.block_num}}
+                                                </td>
+                                                <td>
+                                                    {{block.id}}
+                                                </td>
+                                                <td>
+                                                    {{block.timestamp}}
+                                                </td>
+                                                <td>
+                                                    {{block.transactions.length}}
+                                                </td>
+                                        
+                                        </mat-expansion-panel-header>
+                                    </mat-expansion-panel>
+                                </tr> -->
+                            
+                                  <tr *ngFor="let block of blocks" class="clickable" (click)="showBlockInfo(block)">
+                                      <td>
+                                          {{block.block_num}}
+                                      </td>
+                                      <td>
+                                          {{block.id}}
+                                      </td>
+                                      <td>
+                                          {{block.timestamp}}
+                                      </td>
+                                      <td>
+                                          {{block.transactions.length}}
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
