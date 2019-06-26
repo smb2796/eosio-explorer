@@ -21,8 +21,8 @@ NOTES:
 
 File Structure Functionality:
 Node server:
-app.js - Creates node server
-routing.js - Creates application routes that are accessed by UI
-controller.js - handles making EOSIO api requests and returning the results of those api requests to requests of the created node server. (EOSIO functionality is all in this file)
+1. app.js - Creates node server
+2. routing.js - Creates application routes that are accessed by UI
+3. controller.js - handles making EOSIO api requests and returning the results of those api requests to requests of the created node server. (EOSIO functionality is all in this file)
 
 
