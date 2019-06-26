@@ -17,3 +17,12 @@ To run:
 9. Congratulations! You now have access to an EOSIO block explorer where you can view the most recent blocks in the EOSIO blockchain 
 as well as view the ricardian contracts associated with each block's abi
 
+NOTES:
+
+File Structure Functionality:
+Node server:
+app.js - Creates node server
+routing.js - Creates application routes that are accessed by UI
+controller.js - handles making EOSIO api requests and returning the results of those api requests to requests of the created node server. (EOSIO functionality is all in this file)
+
+
