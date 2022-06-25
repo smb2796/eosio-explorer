@@ -18,7 +18,7 @@
     "eosjs": "^20.0.0",
     "eosjs-api": "^7.0.4",
     "express": "^4.16.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
   }
